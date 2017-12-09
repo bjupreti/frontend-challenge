@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	background: white;
+}
+.container-fluid {
+	padding: 0 !important;
+}
+.row {
+	margin: 0 !important;
+}
+.fill-height {
+  min-height: 100%;
+  height:auto !important;
+  height: 100%;
+}
+/********* header styling starts here ***********/
+header {
+	display: flex;
+	flex-direction: row;
+	margin: 50px 60px 0;
+	justify-content: space-between;
+	background: #0f1110;
+	/*opacity: 0.1;*/
+}
+/*h1#logo {
+	font-size: 0;
+	margin: 0;
+}*/
+header nav.navbar {
+	padding: 0;
+}
+header nav .navbar-nav a.nav-link {
+	padding: 0 !important;
+	margin-left: 40px;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 16px;
+}
+header nav .navbar-nav .active > a.nav-link {
+	color: #88c542;
+}
+
+/********* header styling starts here ***********/
