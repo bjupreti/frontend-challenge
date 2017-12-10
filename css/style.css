@@ -31,8 +31,6 @@ header {
 	flex-direction: row;
 	margin: 50px 60px 0;
 	justify-content: space-between;
-	/*background: red;*/
-	
 }
 header nav.navbar {
 	padding: 0;
@@ -255,3 +253,20 @@ section#fn-ninja-benefits {
 	margin: 130px 0 70px;
 }
 /********* Frontend ninja benefits styling ends here ***********/
+/********* Footer styling starts here ***********/
+footer {
+	background: #333333;
+	display: flex;
+	padding: 24px 60px ;
+	align-items: center;
+	justify-content: space-between;
+}
+footer span {
+	font-size: 14px;
+}
+footer nav a.nav-link {
+	font-size: 14px;
+	color: white;
+	padding: 0 1rem;
+}
+/********* Footer styling ends here ***********/
