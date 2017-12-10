@@ -97,3 +97,48 @@ section#fn-hero-area::before {
 	margin-left: 14.5px;
 }
 /********* Frontend Ninja hero styling ends here ***********/
+
+/********* Frontend Ninja requirements styling starts here ***********/
+section div.section-content-wrapper {
+	margin: 145px 10% 0;
+}
+section#fn-requirements div.row > div{
+	padding: 0 40px;
+}
+.section-title {
+	text-align: center;
+	color: #9b9b9b;
+	line-height: 1;
+	font-size: 48px;
+	margin-bottom: 80px;
+}
+.img-fluid {
+	width: 100%;
+}
+.subtitle {
+	color: #27ad6c;
+	font-size: 16px;
+}
+.requirement-subtitle {
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.33;
+	margin: 40px 0 8px;
+}
+.requirement-description {
+	opacity: 0.78;
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: center;
+  color: #4a4a4a;
+  margin: 0;
+}
+/********* Frontend Ninja requirements styling ends here ***********/
+
+/********* Frontend Ninja resources styling starts here ***********/
+
+/********* Frontend Ninja resources styling starts here ***********/
+
+/********* Latest from frontend styling starts here ***********/
+
+/********* Latest from frontend styling starts here ***********/
