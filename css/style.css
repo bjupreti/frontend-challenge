@@ -6,7 +6,7 @@
 html, body {
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
-	background: white;
+	color: white;
 }
 .container-fluid {
 	padding: 0 !important;
@@ -17,7 +17,7 @@ html, body {
 .fill-height {
   min-height: 100%;
   height:auto !important;
-  height: 100%;
+  /*height: 100%;*/
 }
 /********* header styling starts here ***********/
 header {
@@ -25,13 +25,9 @@ header {
 	flex-direction: row;
 	margin: 50px 60px 0;
 	justify-content: space-between;
-	background: #0f1110;
-	/*opacity: 0.1;*/
+	/*background: red;*/
+	
 }
-/*h1#logo {
-	font-size: 0;
-	margin: 0;
-}*/
 header nav.navbar {
 	padding: 0;
 }
@@ -45,4 +41,59 @@ header nav .navbar-nav .active > a.nav-link {
 	color: #88c542;
 }
 
-/********* header styling starts here ***********/
+/********* header styling ends here ***********/
+
+/********* Frontend Ninja hero styling starts here ***********/
+section#fn-hero-area {
+	display: table;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	/* Usage of shorthand background property */
+	background: url('../images/hero-bg.png') center center / cover no-repeat;
+}
+section#fn-hero-area::before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	content: '';
+	/*background: rgba(137, 197, 66, 0.1);*/
+	background: rgba(0, 0, 0, 0.5);
+}
+.fn-hero-area-wrapper {
+	position: relative;
+	z-index: 1;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.fn-hero-title {
+	color: white;
+	font: bold 5.125em "Roboto";
+}
+.fn-hero-description {
+	width: 40%;
+	margin: 0 auto 39px;
+	line-height: 1.4;
+	font-size: 20px; 
+	opacity: 0.7;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+}
+.fn-hero-description + a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+  width: 192px;
+  height: 67px;
+  border-radius: 4px;
+  background-color: #27ad6c;
+  box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.9);
+}
+.fn-hero-description + a > img {
+	margin-left: 14.5px;
+}
+/********* Frontend Ninja hero styling ends here ***********/
