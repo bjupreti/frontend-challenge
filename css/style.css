@@ -205,6 +205,17 @@ div#section-separator {
 /********* Section separator styling ends here ***********/
 
 /********* Gallery styling starts here ***********/
+section#gallery .row > div {
+	padding: 0;
+}
+.gallery-subtitle {
+	color: #9b9b9b;
+	text-align: center;
+	font-size: 14px;
+	margin: 18px 0 30px;
+}
+/********* Gallery styling ends here ***********/
 
-/********* Gallery styling sends here ***********/
+/********* Frontend ninja benefits styling starts here ***********/
 
+/********* Frontend ninja benefits styling ends here ***********/
