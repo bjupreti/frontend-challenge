@@ -107,6 +107,7 @@ section#fn-hero-area::before {
 /********* Frontend Ninja requirements styling starts here ***********/
 div.section-wrapper {
 	margin: 145px 10% 0;
+	padding-bottom: 1px;
 }
 section#fn-requirements div.row > div{
 	padding: 0 40px;
@@ -217,5 +218,40 @@ section#gallery .row > div {
 /********* Gallery styling ends here ***********/
 
 /********* Frontend ninja benefits styling starts here ***********/
-
+section#fn-ninja-benefits {
+	padding-top: 1px;
+	background-color: #423633;
+	color: #fff;
+}
+.benefit-box {
+	margin-top: 80px;
+}
+.benefit-icon {
+	margin-right: 11px;
+}
+.lunch-icon {
+	margin-left: -20px;
+}
+.retreats-icon {
+	margin-left: -10px;
+}
+.benefit-icon > img {
+	height: 42px;
+	/*width: 50px;*/
+}
+.benefit-subtitle {
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 1.44;
+	font-size: 18px;
+	font-weight: bold;
+}
+.benefit-description {
+	color: rgba(255, 255, 255, 0.5);
+	line-height: 1.5;
+	margin: 0;
+}
+#section-terminator {
+	margin: 130px 0 70px;
+}
 /********* Frontend ninja benefits styling ends here ***********/
