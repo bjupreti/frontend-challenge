@@ -19,6 +19,12 @@ html, body {
   height:auto !important;
   /*height: 100%;*/
 }
+a:hover {
+	text-decoration: none;
+}
+hr {
+	margin: 0;
+}
 /********* header styling starts here ***********/
 header {
 	display: flex;
@@ -99,18 +105,18 @@ section#fn-hero-area::before {
 /********* Frontend Ninja hero styling ends here ***********/
 
 /********* Frontend Ninja requirements styling starts here ***********/
-section div.section-content-wrapper {
+div.section-wrapper {
 	margin: 145px 10% 0;
 }
 section#fn-requirements div.row > div{
 	padding: 0 40px;
+	margin-top: 80px;
 }
 .section-title {
 	text-align: center;
 	color: #9b9b9b;
 	line-height: 1;
 	font-size: 48px;
-	margin-bottom: 80px;
 }
 .img-fluid {
 	width: 100%;
@@ -124,6 +130,7 @@ section#fn-requirements div.row > div{
 	font-size: 18px;
 	line-height: 1.33;
 	margin: 40px 0 8px;
+	display: block;
 }
 .requirement-description {
 	opacity: 0.78;
@@ -136,9 +143,68 @@ section#fn-requirements div.row > div{
 /********* Frontend Ninja requirements styling ends here ***********/
 
 /********* Frontend Ninja resources styling starts here ***********/
-
+section#fn-resources {
+	padding-right: 5vw;
+	border-right: 1px solid #88c542;
+}
+section#fn-resources a {
+	margin: 30px 0;
+	display: inline-block;
+}
+.globe-icon {
+	margin-top: -4px;
+}
 /********* Frontend Ninja resources styling starts here ***********/
 
 /********* Latest from frontend styling starts here ***********/
+section#fn-latest-trend {
+	padding-left: 5vw;
+}
+section#fn-latest-trend a{
+	margin: 30px 0 20px;
+	display: block;
+}
+.uploaded-date {
+	font-size: 13px;
+	color: #9b9b9b;
+	display: block;
+	opacity: 0.5;
+}
+/********* Latest from frontend styling ends here ***********/
 
-/********* Latest from frontend styling starts here ***********/
+/********* Section separator styling starts here ***********/
+div#section-separator {
+	display: flex;
+	justify-content: center;
+	margin: 110px 0;
+}
+.section-separator-icon {
+	position: relative;
+	z-index: 1;
+	width: 100px;
+	text-align: center;
+}
+.section-separator-icon::before {
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	content: "";
+	width: 10vw;
+	height: 1px;
+	background: #88c542;
+}
+.section-separator-icon::after {
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	content: "";
+	width: 10vw;
+	height: 1px;
+	background: #88c542;
+}
+/********* Section separator styling ends here ***********/
+
+/********* Gallery styling starts here ***********/
+
+/********* Gallery styling sends here ***********/
+
