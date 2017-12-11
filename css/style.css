@@ -3,6 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+*::selection {
+	background: #88c542;
+}
 html, body {
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
@@ -13,6 +16,9 @@ html, body {
 }
 .row {
 	margin: 0 !important;
+}
+[class*="col-"] {
+	padding: 0;
 }
 .fill-height {
   min-height: 100%;
@@ -25,26 +31,50 @@ a:hover {
 hr {
 	margin: 0;
 }
+.cursor-pointer {
+	cursor: pointer;
+}
 /********* header styling starts here ***********/
-header {
+/********* header for medium and large screens styling starts here ***********/
+#header {
 	display: flex;
 	flex-direction: row;
 	margin: 50px 60px 0;
 	justify-content: space-between;
 }
-header nav.navbar {
+#header nav.navbar {
 	padding: 0;
 }
-header nav .navbar-nav a.nav-link {
+#header nav .navbar-nav a.nav-link {
 	padding: 0 !important;
 	margin-left: 40px;
 	color: rgba(255, 255, 255, 0.7);
 	font-size: 16px;
 }
-header nav .navbar-nav .active > a.nav-link {
+#header nav .navbar-nav .active > a.nav-link {
 	color: #88c542;
 }
-
+/********* header for medium and large screens styling ends here ***********/
+/********* header for small and mobile screens styling starts here ***********/
+.mob-inner-header {
+/*	position: relative;
+	z-index: 1;
+	top: 100px;
+	left: 0;*/
+	justify-content: space-between;
+	/*background: #1D1D1B;*/
+	background: yellow;
+	padding: 10px 30px;
+}
+.mob-top-icons {
+	display: flex;
+	align-items: center;
+}
+.mob-top-icons i{
+	font-size: 19px;
+	margin: 0 15px;
+}
+/********* header for small and mobile screens styling ends here ***********/
 /********* header styling ends here ***********/
 
 /********* Frontend Ninja hero styling starts here ***********/
@@ -70,8 +100,9 @@ section#fn-hero-area::before {
 	position: relative;
 	z-index: 1;
 	display: table-cell;
-	vertical-align: middle;
+	vertical-align: bottom;
 	text-align: center;
+	padding: 0 10px 8vw;
 }
 .fn-hero-title {
 	color: white;
@@ -86,6 +117,13 @@ section#fn-hero-area::before {
 	font-weight: 100;
 	letter-spacing: 0.5px;
 }
+a.applynow-btn:focus, a.applynow-btn:visited {
+	outline: none;
+	box-shadow: none;
+}
+a.applynow-btn:hover {
+	background-color: #196d44;
+}
 .fn-hero-description + a {
 	display: inline-flex;
 	align-items: center;
@@ -96,6 +134,10 @@ section#fn-hero-area::before {
   border-radius: 4px;
   background-color: #27ad6c;
   box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.9);
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 .fn-hero-description + a > img {
 	margin-left: 14.5px;
@@ -128,7 +170,7 @@ section#fn-requirements div.row > div{
 	text-align: center;
 	font-size: 18px;
 	line-height: 1.33;
-	margin: 40px 0 8px;
+	margin: 20px 0 8px;
 	display: block;
 }
 .requirement-description {
@@ -205,7 +247,7 @@ div#section-separator {
 
 /********* Gallery styling starts here ***********/
 section#gallery .row > div {
-	padding: 0;
+	/*padding: 0;*/
 }
 .gallery-subtitle {
 	color: #9b9b9b;
@@ -263,6 +305,9 @@ footer {
 }
 footer span {
 	font-size: 14px;
+}
+footer nav {
+	flex-shrink: 0;
 }
 footer nav a.nav-link {
 	font-size: 14px;
