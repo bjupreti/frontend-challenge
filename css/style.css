@@ -34,6 +34,54 @@ hr {
 .cursor-pointer {
 	cursor: pointer;
 }
+/********* General styling ends here ***********/
+/********* Preloader styling starts here ***********/
+div#preloader {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1040;
+}
+div.overlay {
+	background: rgba(0, 0, 0, 0.8);
+	width: 50vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+div#spinner {
+	width: 80px;
+	height: 80px;
+	border: 2px solid white;
+	border-top: 3px solid #88c542;
+	border-radius: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	animation: spin 1s infinite linear;
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+div#overlay-right {
+	right: 0;
+}
+div#overlay-left {
+	left: 0;
+}
+/********* Preloader styling ends here ***********/
 /********* header styling starts here ***********/
 /********* header for medium and large screens styling starts here ***********/
 #header {
@@ -93,7 +141,6 @@ section#fn-hero-area::before {
 	left: 0;
 	top: 0;
 	content: '';
-	/*background: rgba(137, 197, 66, 0.1);*/
 	background: rgba(0, 0, 0, 0.5);
 }
 .fn-hero-area-wrapper {
