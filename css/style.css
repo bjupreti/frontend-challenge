@@ -149,7 +149,7 @@ div#overlay-left {
 .site-search-input:focus {
 	background: #000;
 	width: 220px;
-	color: #fff;
+	color: white;
 	border: 1px solid #80bdff;
 	outline: none;
 }
@@ -312,6 +312,20 @@ a.applynow-btn:hover {
 }
 .fn-hero-description + a > img {
 	margin-left: 14.5px;
+}
+.fn-hero-description + a:hover > img {
+	animation: positionChange 0.3s linear 1 ;
+	-webkit-animation: positionChange 0.3s linear 1;
+}
+@keyframes positionChange {
+	0% { transform: translateY(0); }
+	50% { transform: translateY(6px); }
+	100% { transform: translateY(-6px); }
+}
+@-webkit-keyframes positionChange {
+	0% { transform: translateY(0); }
+	50% { transform: translateY(6px); }
+	100% { transform: translateY(-6px); }
 }
 /********* Frontend Ninja hero styling ends here ***********/
 
