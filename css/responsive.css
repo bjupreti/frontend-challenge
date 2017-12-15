@@ -10,7 +10,7 @@
 /* Small devices (landscape phones, less than 768px) */
 @media screen and (max-width: 767px) { 
 	section#fn-hero-area {
-		height: calc(100vh - 68px);
+		height: calc(100% - 68px);
 	}
 	h2.fn-hero-title {
 		padding: 0 20px;
