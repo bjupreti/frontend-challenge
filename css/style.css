@@ -353,6 +353,10 @@ section#fn-requirements div.row > div{
 .subtitle {
 	color: #27ad6c;
 	font-size: 16px;
+	transition: color 0.3s ease-out;
+}
+.subtitle:hover {
+	color: #88c542;
 }
 .requirement-subtitle {
 	text-align: center;
