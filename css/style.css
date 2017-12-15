@@ -149,7 +149,7 @@ div#overlay-left {
 .site-search-input:focus {
 	background: #000;
 	width: 220px;
-	color: white;
+	color: #fff;
 	border: 1px solid #80bdff;
 	outline: none;
 }
@@ -173,7 +173,6 @@ div#overlay-left {
 .mob-inner-header {
 	justify-content: space-between;
 	background: #1D1D1B;
-	/*background: yellow;*/
 	padding: 10px 30px;
 }
 .mob-top-icons {

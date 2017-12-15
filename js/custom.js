@@ -59,4 +59,7 @@ $(function() {
 			$('.site-search-form').submit();
 		}
 	});
+	$(searchInput).on('focusout', function() {
+		searchInput.val("");
+	})
 });
