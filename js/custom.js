@@ -14,18 +14,25 @@ $(function() {
 		checkHeaderOffSet();
 	});	//Scroll function
 	function checkHeaderOffSet() {
-		var topOffset = $(window).scrollTop();
+		var topOffSet = $(window).scrollTop();
 		var windowHeight = window.innerHeight,
 		header = $('header:first-child');
-		if (topOffset > windowHeight - $(header).outerHeight()) {
+		if (topOffSet > windowHeight - $(header).outerHeight()) {
 			$(header).addClass('inbody');
+			$('#scroll').fadeIn();
 		}
 		else {
 			if ($(header).hasClass('inbody'))
-			$(header).removeClass('inbody');
+				$(header).removeClass('inbody');
+			$('#scroll').fadeOut();
 		}
-	};	//checkHeaderOffSet
+	};	//checkHeaderOffSet function ends here
 	checkHeaderOffSet();
+
+	// Onclick functionality of Back to top button
+	$('#scroll').click(function() {
+		$('html, body').animate({ scrollTop: 0}, 600);
+	});
 	// To add functionality on mobile header buttons
 	$('.hamburger').on('click', function(event) {
 		var $this = $(this);

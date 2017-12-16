@@ -59,6 +59,8 @@ div#spinner {
 	border: 2px solid white;
 	border-top: 3px solid #88c542;
 	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -120,6 +122,8 @@ div#overlay-left {
 }
 .header .site-search-input {
 	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
 	border: none;
 	transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
@@ -155,6 +159,8 @@ div#overlay-left {
 }
 .site-search-btn {
 	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
 	position: absolute;
 	top: 15px;
 	right: 5px;
@@ -303,6 +309,8 @@ a.applynow-btn:hover {
   width: 192px;
   height: 67px;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   background-color: #27ad6c;
   box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.9);
   -webkit-transition: background-color 0.5s ease;
@@ -491,6 +499,8 @@ figcaption.gallery-figcaption p{
 }
 figure.gallery-fig:hover figcaption {
 	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
 }
 figcaption * {
 	/*margin: 0;*/
@@ -557,3 +567,28 @@ footer nav a.nav-link {
 	padding: 0 1rem;
 }
 /********* Footer styling ends here ***********/
+/********* BackToTop button styling starts here ***********/
+#scroll {
+	position: fixed;
+	right: 5px;
+	bottom: 20px;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background-color: #88c542;
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+}
+#scroll span {
+	margin-top: -8px;
+	height: 0;
+	width: 0;
+	border: 8px solid transparent;
+	border-bottom-color: #fff;
+}
+/********* BackToTop button styling ends here ***********/
