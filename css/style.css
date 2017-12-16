@@ -452,7 +452,12 @@ figure.gallery-fig {
 	height: auto;
 	overflow: hidden;
 	cursor: pointer;
+}
+figure.gallery-fig.bg-green {
 	background: #3085a3;
+}
+figure.gallery-fig.bg-red {
+	background: #d42a69;
 }
 .gallery-fig img{
 	transform: scale(1.15);
