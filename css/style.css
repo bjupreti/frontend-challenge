@@ -440,14 +440,55 @@ div#section-separator {
 /********* Section separator styling ends here ***********/
 
 /********* Gallery styling starts here ***********/
-section#gallery .row > div {
-	/*padding: 0;*/
-}
-.gallery-subtitle {
+/*.gallery-subtitle {
 	color: #9b9b9b;
 	text-align: center;
 	font-size: 14px;
 	margin: 18px 0 30px;
+}*/
+figure.gallery-fig {
+	position: relative;
+	margin: 0;
+	height: auto;
+	overflow: hidden;
+	cursor: pointer;
+	background: #3085a3;
+}
+.gallery-fig img{
+	transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+figure.gallery-fig:hover img {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	opacity: 0.4;
+}
+figcaption.gallery-figcaption {
+	display: none;
+	text-align: center;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	padding: 10%;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.3s ease-out;
+}
+figcaption.gallery-figcaption p{
+	padding: 20px;
+	border: 1px solid white;
+}
+figure.gallery-fig:hover figcaption {
+	display: flex;
+}
+figcaption * {
+	/*margin: 0;*/
 }
 /********* Gallery styling ends here ***********/
 
